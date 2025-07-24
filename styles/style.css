@@ -199,7 +199,7 @@ nav a:hover {
 .promo-card {
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #ffffff;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -213,14 +213,18 @@ nav a:hover {
   flex: 1;
   min-height: 260px;
   width: 500px;
+  color: #ffffff;
 }
 .promo-card.small {
   width: 240px;
   height: 120px;
+  color: #ffffff;
 }
 .promo-card .discount {
   font-size: 16px;
   font-weight: bold;
+  color: white;
+
 }
 .promo-card span { font-size: 18px; }
 .promo-card a {
@@ -228,7 +232,7 @@ nav a:hover {
   font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* NEWSLETTER */
