@@ -288,11 +288,16 @@ nav a:hover {
 }
 
 .newsletter {
-  background: url('styles/assets/news-letter-bg.png') center/cover no-repeat;
+  background: url('styles/assets/newsletter-bg.jpg') center/cover no-repeat;
   padding: 100px 20px;
   text-align: center;
   color: white;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .newsletter h2 {
   font-size: 36px;
