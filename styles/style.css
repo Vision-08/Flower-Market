@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f7fb;
+  color: #333;
+  padding: 20px;
+}
+
+body {
+  padding: 0 80px;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.logo span {
+  font-size: 24px;
+  color: #e26e35;
+  font-family: Georgia, serif;
+}
+
+.logo small {
+  font-size: 50px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+nav a.active,
+nav a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.bold {
+  font-weight: 900;
+  color: #000;
+}
+
+.orange {
+  color: #d46326;
+  font-weight: 700;
+}
+
+.hero-text p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.hero-img img {
+  max-width: 400px;
+  height: auto;
+}
