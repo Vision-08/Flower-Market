@@ -214,6 +214,9 @@ nav a:hover {
 .latest-deals {
   text-align: center;
   margin-top: 80px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .latest-deals h2 {
@@ -225,6 +228,63 @@ nav a:hover {
   color: #777;
   font-size: 14px;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
+
+.promo-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.promo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-card {
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  min-height: 120px;
+  position: relative;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.promo-card.large {
+  flex: 1;
+  min-height: 260px;
+  width: 500px;
+}
+
+.promo-card.small {
+  width: 240px;
+  height: 120px;
+}
+
+.promo-card .discount {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(253, 251, 251);
+}
+
+.promo-card span {
+  font-size: 18px;
+}
+
+.promo-card a {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(253, 251, 251);
+}
+
 
