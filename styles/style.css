@@ -397,47 +397,217 @@ footer {
 
 @media (max-width: 576px) {
   body {
-    padding: 0 20px;
+    padding: 0 24px;
   }
+
   header {
-    flex-direction: column;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .logo img {
+    display: flex;
+    justify-content: left;
+    width: 110px;
+    margin-bottom: 0;
+  }
+
+  nav ul li:not(:last-child) {
+    display: none;
+  }
+
+  nav ul li:last-child a {
+    font-weight: bold;
+    font-size: 17px;
+  }
+
   nav ul {
-    flex-wrap: wrap;
-    gap: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0;
   }
+
   .hero {
     flex-direction: column;
     text-align: center;
   }
+
   .hero-text {
+    flex: 1;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 24px;
     max-width: 100%;
   }
-  .hero-img img {
-    max-width: 100%;
+
+  .hero-text h1 {
+    font-size: 32px;
   }
+
+  .hero-img {
+    width: 100vw;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    flex: 1;
+    order: -1;
+    height: auto;
+  }
+
+  .products h2 {
+    font-size: 30px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    
   }
-   .product-grid .product-card:nth-child(n+7) {
+
+  .product-grid .product-card:nth-child(n+7) {
     display: none;
   }
+
+  .add-btn {
+    background-color: #d46326;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    max-width: 240px;
+    border-radius: 4px;
+  }
+
+  .badge {
+    display: none;
+    border-radius: none;
+  }
+
   .fp-container {
     flex-direction: column;
     text-align: center;
   }
+
   .fp-image img {
     width: 80%;
   }
-  .promo-card.large {
+
+  .promo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .promo-card {
+    position: relative;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .discount {
+    position: relative;
+    z-index: 2;
+  }
+
+  .promo-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .promo-card p span {
+    font-weight: normal;
+  }
+
+  .promo-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: none;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 15px;
+    box-shadow: none;
+  }
+
+  .promo-card a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+
+  .newsletter {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .newsletter h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
     width: 100%;
   }
-  .promo-card.small {
-    width: 100%;
+
+  .newsletter-form input {
+    width: 70%;
+    border-radius: 4px 0 0 4px;
+    margin-bottom: 0;
+  }
+
+  .newsletter-form button {
+    width: 30%;
+    border-radius: 0 4px 4px 0;
+  }
+
+  footer {
+    padding: 40px 24px;
+    text-align: left;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-links > div {
+    text-align: left;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+
+  .footer-links li {
+    justify-content: left;
+    margin: 5px;
   }
 }
+
+
 
 @media (max-width: 430px) {
 
