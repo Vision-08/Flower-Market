@@ -198,30 +198,36 @@ nav a:hover {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 .promo-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 1;
 }
 .promo-card {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: left;
   padding: 20px;
   min-height: 120px;
   position: relative;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 .promo-card.large {
+  display: flex;
   flex: 1;
   min-height: 260px;
   width: 500px;
   color: #ffffff;
+  
 }
 .promo-card.small {
   width: 240px;
@@ -240,6 +246,7 @@ nav a:hover {
   font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -469,8 +476,11 @@ footer {
    .product-grid .product-card:nth-child(n+7) {
     display: none;
   }
-  
-}
+  footer{
+    padding: 40px 20px;
+    text-align:left;
+  }
+
 
 .add-btn {
   background-color: #d46326;
@@ -506,7 +516,29 @@ footer {
   .newsletter-form button {
     width: 100%;
     border-radius: 4px;
-  
-  
+  }
+  .footer-container{
+    flex-direction: column;
+    text-align: left;
+  }
+  .footer-left{
+    max-width: 100%;
+  }
+  .footer-links{
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+  }
+  .footer-links >div{
+    text-align: left;
+  }
+  .footer-links ul{
+    padding: 0;
+  }
+  .footer-links li{
+    justify-content: left;
+    margin: 5px;
+  }
+
 }
  
