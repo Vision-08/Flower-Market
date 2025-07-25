@@ -495,66 +495,67 @@ footer {
     width: 80%;
   }
 
-  .promo-container {
+  .promo-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-
   .promo-card {
-    position: relative;
-    color: white;
-    text-align: center;
-    border-radius: 12px;
-    overflow: hidden;
-    height: 170px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .promo-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
-
-  .discount {
-    position: relative;
-    z-index: 2;
-  }
-
-  .promo-card p {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .promo-card p span {
-    font-weight: normal;
-  }
-
-  .promo-card a {
-    display: inline-block;
-    padding: 8px 16px;
-    background: none;
-    color: #ffffff !important;
-    border: none;
-    border-radius: 0;
-    font-weight: 600;
-    text-decoration: underline;
-    font-size: 15px;
-    box-shadow: none;
-  }
-
-  .promo-card a:hover {
-    text-decoration: none;
-    opacity: 0.9;
-  }
+  position: relative;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.promo-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+.promo-card.large{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.discount {
+  position: relative;
+  z-index: 2;
+}
+.promo-card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.promo-card p span {
+  font-weight: normal;
+}
+.promo-card a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: none;           
+  color: #ffffff !important; 
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+  box-shadow: none;
+}
+.promo-card a:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
 
   .newsletter {
     height: auto;
@@ -713,13 +714,23 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.promo-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3); /* for overlay darkness */
-  z-index: 1;
+.promo-left{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
 }
+.promo-card.large{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .discount {
   position: relative;
   z-index: 2;
