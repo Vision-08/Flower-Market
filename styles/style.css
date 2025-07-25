@@ -104,25 +104,32 @@ nav a:hover {
 
 .product-card {
   background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
+  border-radius: 4px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
 }
 
 .product-card img {
-  max-width: 150px;
-  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 260px;
+  margin-bottom: 15px;
+  border-radius: 2px;
 }
 
 .product-card h4 {
-  font-size: 16px;
+   font-size: 18px;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
 .product-card .price {
-  font-size: 14px;
-  margin-bottom: 10px;
+   font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .add-btn {
@@ -147,9 +154,10 @@ nav a:hover {
   gap: 40px;
 }
 .fp-image { position: relative; }
-.fp-image img { width: 300px; border-radius: 8px; }
+.fp-image img { width: 300px; border-radius: 4px; }
 .fp-image .badge {
   position: absolute;
+  text-shadow: (30px 10px 4px #777);
   top: -30px;
   right: -30px;
   width: 100px;
@@ -400,6 +408,7 @@ footer {
 @media (max-width: 430px) {
 
   header{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -410,10 +419,40 @@ footer {
   .logo img{
     display: flex;
     justify-content: left;
-    width: 80px;
+    width: 100px;
     margin-bottom: 0;
   }
+   nav ul li:not(:last-child) {
+    display: none;
+  }
+
+   nav ul li:last-child a {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+   nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0;
+  }
+
+
+  .hero-text{
+    flex: 1;
+    flex-direction: column;
+    text-align:left;
+    padding-top: 20px;
+
+     
+  }
   .hero-img{
+    width: 100vw;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    flex: 1;
+    order: -1;
     max-width: 100%;
     height: auto;
   }
@@ -430,7 +469,29 @@ footer {
    .product-grid .product-card:nth-child(n+7) {
     display: none;
   }
+  
 }
+
+.add-btn {
+  background-color: #d46326;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 2px;
+}
+  .badge{
+    display: none;
+    border-radius: none;
+  }
+  
+  .promo-container{
+    display: grid;
+  }
   .newsletter h2 {
     font-size: 24px;
   }
@@ -446,4 +507,6 @@ footer {
     width: 100%;
     border-radius: 4px;
   
+  
 }
+ 
